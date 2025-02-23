@@ -1,0 +1,100 @@
+/* Home Page Styling */
+body{
+  background-color: #fff; /* White background */
+}
+
+.home-container {
+  text-align: center;
+  padding: 50px;
+  background-color: #fff; /* White background */
+  color: #493d9e; /* Main theme color */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Ensures center alignment */
+  justify-content: center;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+.title {
+  font-size: 40px;
+  margin-bottom: -10px;
+}
+
+/* Styling for buttons */
+.home-buttons {
+  margin-top: 10px; /* Reduced margin to move buttons up */
+  display: flex;
+  flex-wrap: wrap; /* Prevents layout issues on smaller screens */
+  justify-content: center;
+  gap: 10px; /* Adds spacing between buttons */
+}
+
+.home-button {
+  background-color: #493d9e;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  min-width: 150px; /* Ensures a minimum width */
+  text-decoration: none;
+}
+
+.home-button:hover {
+  background-color: #b2a5ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 30px;
+    min-height: 85vh; /* Moves content slightly up */
+  }
+
+  h1 {
+    font-size: 36px; /* Slightly smaller heading */
+  }
+
+  .home-buttons {
+    gap: 10px; /* Adjusts spacing */
+  }
+
+  .home-button {
+    width: 80%; /* Buttons take 80% width for better touch experience */
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    padding: 20px;
+    min-height: 80vh; /* Moves everything up on small screens */
+  }
+
+  h1 {
+    font-size: 32px; /* Adjust heading size */
+  }
+
+  .home-buttons {
+    margin-top: 0px; /* Moves buttons closer to text */
+  }
+
+  .home-button {
+    width: 100%; /* Buttons take full width on mobile */
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 769px) {
+  .home-container{
+    margin-top: 80px;
+  }
+
+}

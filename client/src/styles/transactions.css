@@ -1,0 +1,111 @@
+/* Transactions Page Styling */
+.transactions-container {
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Title Styling */
+.transactions-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #493d9e;
+  margin-bottom: 15px;
+}
+
+/* Transactions Box */
+.transactions-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow-x: auto; /* Allows horizontal scrolling on small screens */
+}
+
+/* Table Styling */
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 400px; /* Ensures proper table layout */
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.transactions-table th {
+  background-color: #b2a5ff;
+  color: white;
+}
+
+/* Income & Expense Colors */
+.income {
+  color: green;
+  font-weight: bold;
+}
+
+.expense {
+  color: red;
+  font-weight: bold;
+}
+
+/* 📌 Responsive Design */
+@media (max-width: 768px) {
+  .transactions-title {
+    font-size: 24px;
+  }
+
+  .transactions-box {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .transactions-table {
+    min-width: 100%; /* Prevents the table from shrinking */
+  }
+
+  .transactions-table th,
+  .transactions-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .transactions-container {
+    padding: 15px;
+  }
+
+  .transactions-title {
+    font-size: 22px;
+  }
+
+  .transactions-box {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .transactions-table {
+    display: block;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Ensures table remains readable */
+  }
+
+  .transactions-table th,
+  .transactions-table td {
+    font-size: 13px;
+    padding: 6px;
+  }
+}

@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  margin: 70px auto; /* Reduced margin to fit mobile */
+  padding: 0 15px; /* Added padding for small screens */
+  width: 100%;
+  max-width: 600px; /* Prevents excessive width */
+}
+
+/* Headings */
+h2 {
+  color: #493d9e;
+  font-weight: bold;
+  font-size: 28px; /* Slightly reduced for better scaling */
+}
+
+h3 {
+  color: #493d9e;
+  font-size: 24px;
+}
+
+/* Balance Display */
+.balance {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0275d8;
+  margin: 10px 0;
+}
+
+/* Instructions */
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+/* Buttons */
+button {
+  padding: 12px;
+  background-color: #493d9e;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  margin: 10px auto; /* Centered button */
+  display: block;
+  width: 100%; /* Makes buttons full-width */
+  max-width: 250px; /* Prevents excessive width */
+}
+
+button:hover {
+  background-color: #b2a5ff;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button.stop {
+  background: #d9534f;
+}
+
+button.stop:hover {
+  background: #c9302c;
+}
+
+/* Listening Status */
+.listening {
+  font-weight: bold;
+  color: #d9534f;
+}
+
+/* Commands List */
+.commands {
+  width: 100%;
+  max-width: 500px;
+  margin: 15px auto;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.commands ul {
+  width: 100%;
+  padding: 0;
+}
+
+.commands li {
+  background: #fff3cd;
+  border-left: 4px solid #ff9800;
+  padding: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Adjusted h4 */
+h4 {
+  background: #e8f4ff;
+  border: 2px solid #0275d8;
+  padding: 10px;
+  margin: 0 auto 5px auto;
+  max-width: 100%;
+  text-align: center;
+  display: block;
+}
+
+/* Spoken Commands Box */
+.spokencommands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto;
+  padding: 10px;
+  border-radius: 8px;
+  background: #e8f4ff;
+  border: 2px solid #0275d8;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Individual Spoken Command Items */
+.spokencommands ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.spokencommands li {
+  background: #d1e7ff;
+  color: #0d47a1;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px 0;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  text-transform: capitalize;
+  display: block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .spokencommands {
+    max-width: 95%;
+  }
+
+  .commands {
+    width: 95%;
+  }
+
+  button {
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .spokencommands {
+    max-width: 80%;
+  }
+
+  .commands {
+    width: 80%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+  .container{
+    margin-top: 100px;
+  }
+}

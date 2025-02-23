@@ -1,0 +1,121 @@
+/* 🌟 Savings Page Styling */
+.savings-container {
+  background-color: #dad2ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  margin: 80px auto; /* ✅ Centers horizontally */
+  width: 90%; /* ✅ Makes it responsive */
+  max-width: 500px; /* ✅ Prevents it from becoming too wide */
+  border-radius: 15px;
+}
+
+/* 🟢 Center it Vertically (if needed) */
+
+/* 🔹 Title Styling */
+.savings-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #493d9e;
+  margin-bottom: 15px;
+}
+
+/* 🔹 Balance & Goal Styling */
+.savings-balance,
+.savings-goal {
+  font-size: 22px;
+  font-weight: 600;
+  color: #3f329d;
+  margin: 10px 0;
+}
+
+/* 🔹 Input Styling */
+.savings-input {
+  margin-top: 15px;
+  padding: 12px;
+  border: 2px solid #493d9e;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 300px;
+  text-align: center;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.savings-input:focus {
+  border-color: #b2a5ff;
+  box-shadow: 0 0 8px rgba(178, 165, 255, 0.5);
+}
+
+/* 🔹 Button Styling */
+.savings-button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background-color: #493d9e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.savings-button:hover {
+  background-color: #b2a5ff;
+  transform: scale(1.05);
+}
+
+/* 📌 Responsive Design */
+@media (max-width: 768px) {
+  .savings-title {
+    font-size: 26px;
+  }
+
+  .savings-container {
+    width: 80%;
+  }
+
+  .savings-balance,
+  .savings-goal {
+    font-size: 18px;
+  }
+
+  .savings-input {
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .savings-button {
+    font-size: 15px;
+    padding: 10px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .savings-title {
+    font-size: 24px;
+  }
+
+  .savings-container {
+    width: 80%;
+  }
+  .savings-balance,
+  .savings-goal {
+    font-size: 16px;
+  }
+
+  .savings-input {
+    width: 95%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .savings-button {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}

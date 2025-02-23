@@ -1,0 +1,79 @@
+/* Summary Page Styling */
+.summary-container {
+  background-color: #dad2ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  margin: 80px auto; /* ✅ Centers horizontally */
+  width: 90%; /* ✅ Makes it responsive */
+  max-width: 500px; /* ✅ Prevents it from becoming too wide */
+  border-radius: 15px;
+}
+
+/* Title Styling */
+.summary-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #493d9e;
+  margin-bottom: 15px;
+}
+
+
+
+/* Income, Expenses, and Balance Styling */
+.summary-income {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+
+.summary-expenses {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+
+.summary-balance {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* 📌 Responsive Design */
+@media (max-width: 768px) {
+  .summary-title {
+    font-size: 24px;
+  }
+
+  .summary-container {
+    width: 80%;
+  }
+
+  .summary-income,
+  .summary-expenses,
+  .summary-balance {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .summary-title {
+    font-size: 22px;
+  }
+
+  .summary-container {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .summary-income,
+  .summary-expenses,
+  .summary-balance {
+    font-size: 16px;
+  }
+}

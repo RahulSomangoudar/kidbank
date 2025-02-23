@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* Custom Scrollbar for Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #9f19ff; /* Light grey track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d298ff; /* Darker thumb */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d918d9; /* Even darker on hover */
+}
+
+*{
+  font-family: "Nunito", serif;
+}

@@ -1,0 +1,122 @@
+/* General container styling */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+/* Form box */
+.register-box {
+  background-color: #dad2ff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+/* Title */
+.register-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #493d9e;
+  margin-bottom: 15px;
+}
+
+/* Input fields */
+.register-input {
+  width: 100%;
+  max-width: 350px;
+  padding: 12px 16px; /* Ensures spacing */
+  margin: 10px auto;
+  border: 1px solid #b2a5ff;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensures padding is included */
+  transition: 0.3s ease-in-out;
+}
+
+.register-input:focus {
+  border-color: #493d9e;
+  outline: none;
+  box-shadow: 0 0 5px rgba(73, 61, 158, 0.5);
+}
+
+/* Register button */
+.register-button {
+  width: 100%;
+  max-width: 350px;
+  padding: 12px;
+  background-color: #493d9e;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.register-button:hover {
+  background-color: #b2a5ff;
+}
+
+/* Text below the form */
+.register-text {
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+/* Login link */
+.register-link {
+  color: #493d9e;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Fully Responsive Design */
+@media (max-width: 768px) {
+  .register-box {
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+    margin-top: 40%;
+  }
+
+  .register-title {
+    font-size: 24px;
+  }
+
+  .register-input, .register-button {
+    font-size: 14px;
+    padding: 10px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-box {
+    width: 95%;
+    padding: 15px;
+    margin-top: 40%;
+  }
+
+  .register-title {
+    font-size: 22px;
+  }
+
+  .register-input, .register-button {
+    font-size: 14px;
+    padding: 10px;
+    max-width: 100%;
+  }
+}

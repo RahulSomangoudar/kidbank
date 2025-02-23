@@ -1,0 +1,115 @@
+/* Navbar Styling */
+.navbar {
+  background-color: #493d9e;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+/* Logo */
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/* Navbar Links */
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+
+.nav-links li a:hover {
+  color: #fff2af;
+}
+
+/* Logout Button */
+.logout-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logout-button:hover {
+  background-color: darkred;
+}
+
+/* ✅ Fixed Hamburger Icon */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none !important; /* Prevents background color change */
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  left: 60%; /* ✅ Aligns properly on mobile */
+  z-index: 1100; /* Ensures it stays above everything */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #493d9e;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 12px 0;
+    width: 100%;
+  }
+
+  .logout-button {
+    width: 80%;
+    margin: 10px auto;
+  }
+}
